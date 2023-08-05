@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build:ui": "rm -rf build && cd ../../../fullstack_open/part2/phonebook && npm run build && cp -r build ../../../fullstack_hl/part3/fs_phonebook_api"
+    "build:ui": "rm -rf build && cd ../../../fullstack_open/part2/phonebook && npm run build && cp -r build ../../../fullstack_hl/part3/fs_phonebook_api",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "keywords": [],
   "author": "rrizze",
